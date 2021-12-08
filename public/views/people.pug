@@ -1,0 +1,22 @@
+html
+    
+    head
+        title pug document
+        script(src="../bootstrap.min.js")
+        link(rel="stylesheet",href="../bootstrap.min.css")
+        script(src="../jquery.min.js")
+
+    body
+        h1 People Data
+        div.jumbotron
+            table.table.table-striped
+                thead
+                    th Sno
+                    th Name
+                    th City
+                tbody
+                    each x in people
+                        tr
+                            td= x.sno
+                            td= x.name
+                            td= x.city
